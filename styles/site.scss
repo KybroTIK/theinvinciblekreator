@@ -1,0 +1,1158 @@
+:root {
+    --brandColor: rgb(236, 157, 9);
+    --mainBrandColor: rgb(167, 7, 167);
+    --teamBlack: rgb(19, 18, 18);
+    --teamWhite: rgb(247, 239, 239);
+}
+
+html, body {
+    
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald";
+    scroll-behavior: smooth;
+}
+
+.first-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--teamWhite);
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.home-page {
+    height: 80vh;
+    width: 92vw;
+    background-color: var(--teamWhite);
+    border-radius: 0 0px 50px 0;
+    background: rgba(247, 0, 247, 0.904);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+}
+
+// our side nav bar
+
+.nav-bar-side {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 93%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    z-index: 999;
+    transition: 0.5s all;
+
+
+    a {
+        // display:block;
+        // background: transparent;
+        // color: transparent;
+        text-decoration: none;
+
+        span {
+
+            margin: auto;
+            transition: 0.5s all;
+
+            .fa {
+
+                display: flex;
+                height: 80px;
+                width: 80px;
+                margin: auto;
+                font-size: 2em;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                transition: 0.5s all;
+
+
+            }
+        }
+
+    }
+
+}
+
+
+.active-nav {
+
+
+    @keyframes moveLeft {
+        0% {
+            margin-left: 10px;
+        }
+
+        100% {
+            border-radius: 10px;
+            margin-left: -70px;
+            color: var(--teamWhite);
+            background: rgba(247, 13, 247, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5.0px);
+            -webkit-backdrop-filter: blur(5.0px);
+            transition: 0.5s all;
+        }
+    }
+
+
+    animation: moveLeft 1s linear forwards;
+}
+
+//our nav bar
+
+.nav-bar {
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--teamBlack);
+    border-bottom: 1px solid var(--mainBrandColor);
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+   
+}
+
+.team-layout {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+
+}
+
+.team-name {
+    font-size: 1.3em;
+    margin: auto;
+    margin-left: 20px;
+    color: var(--teamWhite);
+}
+
+.our-team-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+
+    span {
+        margin: auto;
+
+        .fa {
+            color: var(--teamWhite);
+            font-size: 1.3em;
+        }
+    }
+
+}
+
+
+.about-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--teamWhite);
+    overflow: hidden;
+    display: none;
+
+
+    .side-nav {
+        height: 90vh;
+        width: 15vw;
+        margin-top: 5vh;
+        margin-left: 10px;
+        background: rgba(236, 156, 9, 0.781);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(8.0px);
+        -webkit-backdrop-filter: blur(8.0px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        overflow: hidden;
+
+        h1 {
+            text-align: center;
+            font-size: 1.8em;
+            color: rgb(8, 8, 8);
+            margin-top: 20px;
+        }
+
+        .partners-list {
+
+            height: 85%;
+            width: 100%;
+
+            overflow-y: auto;
+
+            div {
+                display: flex;
+                margin: auto;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                height: 150px;
+                min-width: 150px;
+                width: 90%;
+                background: rgba(0, 0, 0, 0.719);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+                border-radius: 10px;
+                overflow: hidden;
+
+                &:hover .partner-details {
+                    margin-top: 0%;
+                }
+
+                .partner-details {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.719);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(8.0px);
+                    -webkit-backdrop-filter: blur(8.0px);
+                    margin-top: 80%;
+                    z-index: 5;
+                    transition: 0.5s all;
+
+                    h1 {
+                        font-size: 1em;
+                        color: white;
+                        margin-top: 1%;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                        padding: 2px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+            }
+
+
+        }
+
+        .hint {
+            display: block;
+            height: 10%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.719);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8.0px);
+            -webkit-backdrop-filter: blur(8.0px);
+            font-size: 1em;
+            color: white;
+            text-align: center;
+        }
+
+    }
+
+    .right-container {
+        height: 95vh;
+        width: 100vw;
+        margin-top: 5vh;
+        margin-left: 10px;
+
+
+        .welcome-bar {
+            width: 78vw;
+            height: 20vh;
+            background: rgba(192, 6, 199, 0.747);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8.0px);
+            -webkit-backdrop-filter: blur(8.0px);
+            border-radius: 10px 0px 0px 0px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            h1 {
+                text-align: center;
+                font-size: 2.5em;
+                color: white;
+
+            }
+
+        }
+
+        .status-container {
+            position: absolute;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+            margin: auto;
+            margin-top: -5%;
+            margin-left: 10%;
+            z-index: 10;
+
+            .overview {
+
+
+                height: 120px;
+                width: 120px;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                background: rgba(236, 156, 9, 0.719);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+
+                span {
+                    display: flex;
+                    height: 70%;
+                    width: 100%;
+
+                    .fa {
+                        margin: auto;
+                        font-size: 2.5em;
+
+                    }
+
+                }
+
+                p {
+
+                    font-size: 1em;
+                    padding: 0px 2px;
+                    text-align: center;
+
+                }
+            }
+        }
+
+
+
+        .section-bar {
+            width: 78vw;
+            height: 67vh;
+            background: rgba(231, 227, 227, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8.0px);
+            -webkit-backdrop-filter: blur(8.0px);
+            border-radius: 0px 0px 50px 10px;
+            margin-top: 3vh;
+            margin-bottom: 1vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            .team-profile {
+                display: inline-block;
+                height: 260px;
+                width: 260px;
+                background: rgba(241, 6, 229, 0.685);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+                border-radius: 10px;
+                margin-left: 60px;
+                margin-right: 20px;
+                margin-top: 70px;
+                margin-bottom: 30px;
+                overflow-y: hidden;
+                transition: 0.5s all;
+                white-space: normal;
+
+                &:hover .profile-description {
+                    margin-top: 0%;
+                }
+
+                .team-profile-design {
+                    position: absolute;
+                    height: 260px;
+                    width: 260px;
+                    background: rgba(0, 0, 0, 0.774);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(8.0px);
+                    -webkit-backdrop-filter: blur(8.0px);
+                    margin-top: -140px;
+                    border-radius: 50%;
+                }
+
+                .team-profile-pic {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    height: 150px;
+                    width: 150px;
+                    background: rgba(252, 252, 252, 0.774);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(8.0px);
+                    -webkit-backdrop-filter: blur(8.0px);
+                    margin: auto;
+                    border-radius: 50%;
+                    border: 3px solid var(--brandColor);
+                    overflow-x: hidden;
+                    overflow-y: hidden;
+
+
+                }
+
+                .team-posts {
+                    position: absolute;
+                    top: 0px;
+                    left: calc(100% - 120px);
+                    bottom: calc(100% - 30px);
+                    right: 0;
+                    margin: auto;
+                    height: 30px;
+                    width: 120px;
+                    background: rgba(252, 252, 252, 0.959);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(8.0px);
+                    -webkit-backdrop-filter: blur(8.0px);
+
+                    h1 {
+                        font-size: 1.2em;
+                        text-align: center;
+                    }
+                }
+
+                .team-profile-name {
+                    position: absolute;
+                    top: calc(100% - 30px);
+                    left: 0%;
+                    bottom: 0;
+                    right: calc(100% - 120px);
+                    margin: auto;
+                    height: 30px;
+                    width: 150px;
+                    background: rgba(252, 252, 252, 0.959);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(8.0px);
+                    -webkit-backdrop-filter: blur(8.0px);
+
+                    h1 {
+                        font-size: 1.2em;
+                        text-align: center;
+                    }
+                }
+
+                .profile-description {
+                    position: absolute;
+                    height: 260px;
+                    width: 260px;
+                    margin-top: 100%;
+                    background: rgba(0, 0, 0, 0.822);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    transition: 0.5s all;
+                    border-radius: 10px;
+
+                    .social-image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: auto;
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+
+
+                        // img{
+                        //     height:50%;
+                        //     width:50%;
+                        // }
+                    }
+
+                    .socials {
+                        display: flex;
+                        position: absolute;
+                        top: calc(100% - 50px);
+                        left: 0%;
+                        bottom: 0;
+                        right: 0;
+                        margin: auto;
+                        height: 50px;
+                        width: 100%;
+                        background-color: var(--brandColor);
+                        border-radius: 10px 10px 0 0;
+                        z-index: 10;
+
+
+                        span {
+                            display: flex;
+                            margin: auto;
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                            background: rgba(255, 255, 255, 0.719);
+                            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                            backdrop-filter: blur(8.0px);
+                            -webkit-backdrop-filter: blur(8.0px);
+                            transition: 0.5s all;
+
+                            &:hover {
+                                background: rgba(255, 255, 255, 0.932);
+
+                                .fa {
+                                    font-size: 1.5em;
+                                }
+                            }
+
+                            .fa {
+                                margin: auto;
+                                font-size: 1em;
+                                transition: 0.5s all;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+
+
+}
+
+.h-page {
+    display: none;
+
+    // this is the expertise page...
+
+    .expertise {
+        height: auto;
+        width: 100vw;
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-family: "Oswald";
+        }
+
+    }
+
+    .expertise-container {
+        display: flex;
+        height: auto;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            display: inline-block;
+            margin: auto;
+            margin-top: 50px;
+            height: 250px;
+            width: 40%;
+            margin-bottom: 100px;
+            font-family: "Oswald";
+
+            p {
+                font-size: 1em;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+
+        }
+    }
+
+    // ui and ux page and the rest
+
+    .ui-ux-page {
+        height: 100vh;
+        width: 92vw;
+        border-radius: 0 20px 20px 0;
+        background-image: url("https://tescomng.com/wp-content/uploads/2020/09/Defining-the-Difference-between-UI-and-UX.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+
+        .page-text {
+            height: 100%;
+            width: 30vw;
+            background: rgba(199, 4, 248, 0.712);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8.0px);
+            -webkit-backdrop-filter: blur(8.0px);
+            overflow: scroll;
+            transition: 0.5s all;
+
+            &:hover {
+                background: rgb(199, 4, 248);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+            }
+
+            h1 {
+                font-size: 2.5em;
+                text-align: center;
+                color: var(--teamWhite);
+                font-family: "Oswald";
+                margin-top: 50px;
+            }
+
+            P {
+                font-size: 1em;
+                font-weight: 500;
+                margin-top: 20px;
+                padding: 20px;
+                color: var(--teamWhite);
+                transition: 0.5s all;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .app-dev {
+        @extend .ui-ux-page;
+        background-image: url("https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/1824/2017/09/blog-img-ensuring-your-app-dev-team.jpg");
+
+        .page-text {
+            background: rgba(226, 113, 7, 0.842);
+
+            &:hover {
+                background: rgb(226, 113, 7);
+
+            }
+        }
+    }
+
+
+    .ecommerce {
+        @extend .ui-ux-page;
+        background-image: url("https://lvivity.com/wp-content/uploads/2018/08/ecommerce-app.jpg");
+
+        .page-text {
+            background: rgba(226, 7, 171, 0.884);
+
+            &:hover {
+                background: rgb(226, 7, 171);
+
+            }
+        }
+    }
+
+
+    .gaming-streaming {
+        @extend .ui-ux-page;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSskVq4ZWtqtKKcrAtm8IE6N__PSLXXPD-AyA&usqp=CAU");
+
+        .page-text {
+            background: rgba(245, 151, 45, 0.884);
+
+            &:hover {
+                background: rgb(245, 152, 45);
+
+            }
+        }
+    }
+
+    .art-illustration {
+        @extend .ui-ux-page;
+        background-image: url("https://i.pinimg.com/originals/88/2e/2e/882e2e6aa759219fbcb511e2f2d3dac6.png");
+
+        .page-text {
+            background: rgba(219, 11, 115, 0.884);
+
+            &:hover {
+                background: rgb(219, 11, 115);
+
+            }
+        }
+    }
+
+    .model-animation {
+        @extend .ui-ux-page;
+        background-image: url("https://miro.medium.com/max/4948/1*8LGRsJXZ42D0XQ-TGBL0zw.png");
+        background-color: var(--teamWhite);
+
+        .page-text {
+            background: rgba(170, 65, 5, 0.884);
+
+            &:hover {
+                background: rgb(170, 65, 5);
+
+            }
+        }
+    }
+
+    .reviews {
+        height: 350px;
+        width: 100vw;
+        background-color: var(--teamWhite);
+
+        .review-box {
+            display: flex;
+            position: absolute;
+            margin: auto;
+            height: 250px;
+            width: 250px;
+            background: rgba(241, 139, 6, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(8.0px);
+            -webkit-backdrop-filter: blur(8.0px);
+            border-radius: 10px;
+            transition: 1s all;
+            transform: rotate(45deg);
+            margin-top: 50px;
+            z-index: 10;
+
+            h1 {
+                display: block;
+                font-size: 2em;
+                text-align: center;
+                font-size: 3em;
+                margin: auto;
+                font-family: "Oswald";
+                transform: rotate(-45deg);
+                color: var(--mainBrandColor);
+            }
+        }
+
+        .reviewers {
+            height: 350px;
+            width: 72vw;
+            margin-top: 20px;
+            margin-left: 25vw;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            white-space: nowrap;
+
+            div {
+                height: 300px;
+                width: 250px;
+                background-color: var(--teamBlack);
+                margin: 20px 20px;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+                border-radius: 20px;
+            }
+        }
+
+    }
+
+    .tell-us {
+        height: 350px;
+        width: 100vw;
+
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            font-size: 3em;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            font-family: "Oswald";
+        }
+
+        p {
+            font-size: 1em;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+            span {
+                display: flex;
+                justify-content: center;
+                height: 50px;
+                width: 20vw;
+                background: rgba(231, 227, 227, 0.5);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+                // border-radius: 10px;
+
+                transition: 0.5s all;
+                overflow: hidden;
+
+                p {
+                    height: 70px;
+                    text-align: center;
+                    align-items: center;
+                    margin-top: 15px;
+                    transition: 0.5s all;
+
+                }
+
+
+
+                &:hover {
+                    background: rgba(8, 8, 8, 0.5);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(8.0px);
+                    -webkit-backdrop-filter: blur(8.0px);
+                    color: var(--teamWhite);
+
+                    p {
+                        margin-top: -35px;
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+    .contact {
+        @extend .tell-us;
+        background-color: var(--teamBlack);
+        overflow: hidden;
+
+        h1 {
+            color: var(--teamWhite);
+        }
+
+        p {
+            color: var(--teamWhite);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+            div {
+                display: flex;
+                justify-content: center;
+                height: 50px;
+                width: 20vw;
+                background: rgba(231, 227, 227, 0.5);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+                // border-radius: 10px;
+                text-align: center;
+                align-items: center;
+                margin-top: 30px;
+                transition: 0.5s all;
+
+                &:hover {
+                    background: rgba(8, 8, 8, 0.5);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(8.0px);
+                    -webkit-backdrop-filter: blur(8.0px);
+                    color: var(--teamWhite);
+                }
+
+                span {
+                    display: block;
+                    margin: auto;
+                    height: 100%;
+                    width: 20%;
+                    background-color: white;
+                    margin-left: -1vw;
+                    font-size: 2em;
+
+
+                    &:hover {
+                        width: 100%;
+                        background: rgba(8, 8, 8, 0.5);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                        backdrop-filter: blur(8.0px);
+                        -webkit-backdrop-filter: blur(8.0px);
+                        color: var(--teamWhite);
+                    }
+
+                    .fa {
+                        color: rgb(15, 50, 248);
+                    }
+
+                }
+
+
+                p {
+                    display: flex;
+                    margin: auto;
+                    margin-top: 2vh;
+                    height: 100%;
+                    width: 20%;
+                    color: white;
+                    margin-left: -5vw;
+                    font-size: 1em;
+                    text-align: center;
+
+                }
+
+
+                #github {
+
+                    .fa {
+                        color: rgb(12, 12, 12);
+
+                    }
+
+                    &:hover .fa {
+                        color: rgb(238, 239, 245);
+                    }
+
+                }
+
+
+            }
+
+        }
+
+    }
+
+
+}
+
+// position require sections 
+
+
+
+.career-page {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+
+    .career-header {
+        height: 20%;
+        width: 100%;
+
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 3em;
+        }
+    }
+
+    .post-box {
+        height: 80%;
+        width: 100vw;
+        overflow: scroll;
+        overflow-y: hidden;
+
+        .post-container {
+            height: 100%;
+            width: 100%;
+            overflow: scroll;
+            margin: auto;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            div {
+                display: inline-block;
+                height: 450px;
+                width: 350px;
+                background: rgba(241, 139, 6, 0.685);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+                border-radius: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+                overflow-y: hidden;
+                transition: 0.5s all;
+                white-space: normal;
+
+                &:hover {
+                    background: rgba(8, 8, 8, 0.849);
+                    color: white;
+
+                    .h1 {
+                        color: white;
+                        height: 30%;
+                    }
+                }
+
+                .h1 {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    transition: 0.5s all;
+
+                    h1 {
+                        font-size: 2.2em;
+                        margin: auto;
+                        text-align: center;
+                    }
+                }
+
+                .required {
+
+                    p {
+
+                        padding: 5px 10px;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .part-header {
+        height: 20%;
+        width: 100%;
+
+        h1 {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 3em;
+        }
+    }
+
+
+    .part-box {
+        @extend .post-box;
+
+        .partner-container {
+            @extend .post-container;
+
+
+            div {
+                background: rgba(241, 6, 202, 0.685);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(8.0px);
+                -webkit-backdrop-filter: blur(8.0px);
+
+                h1 {
+                    text-align: center;
+                    font-size: 1.8em;
+                    color: var(--teamWhite);
+                    margin-top: 20px;
+                }
+
+                span {
+
+                    p {
+                        padding: 15px;
+
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
+
+// our works sections
+
+.works-portfolio {
+    height: 100vh;
+    width: 92vw;
+    background: rgba(247, 161, 0, 0.788);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border-radius: 0 50px 50px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+    text-align: center;
+    padding: auto;
+    padding-top:200px;
+    font-size:3.5em;
+    
+}
+
+
+// media quaries
+
+#renderTIK {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    touch-action:auto;
+}
+
+#mobileView{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    #renderMobile {
+        background: transparent;
+        width: 100vw;
+        height: 100%;
+        touch-action:auto;
+    }
+    h1{
+        position: absolute;
+        display: flex;
+        align-self:center;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 95%;
+        margin: auto;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        color:white;
+        height:20vh;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.61);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 8.0px );
+            -webkit-backdrop-filter: blur( 8.0px );
+            border-radius: 10px;
+    }
+
+
+    a{
+        position: absolute;
+        display: flex;
+        align-self:center;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 80%;
+        margin: auto;
+        text-align: center;
+        font-size:small;
+        font-weight: bold;
+        color:white;
+     
+    }
+
+}
+
+.system-view{
+    display:block;
+}
