@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/site.css" rel="stylesheet" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js'></script>
+    <script src="https://preview.babylonjs.com/gltf_validator.js"></script>
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+
+    <title>TIK OFFICIAL SITE</title>
+</head>
+
+<body>
+
+    <div class="system-view" id="systemView">
+
+
+
+        <!-- side nav bars -->
+        <div class="nav-bar-side">
+            <a href="#hPage"> <span class="add-btn" id="homeButton"> <i class="fa fa-home" aria-hidden="true"></i>
+                </span> </a>
+            <a href="#worksPortfolio"> <span class="notification" id="worksButton"> <i class="fa fa-briefcase"
+                        aria-hidden="true"></i> </span> </a>
+            <a href="#careerPage"> <span class="team-logo" id="careers"> <i class="fa fa-plus-square-o"
+                        aria-hidden="true"></i> </span> </a>
+            <a href="#aboutPage"> <span class="team-logo" id="aboutUs"> <i class="fa fa-users" aria-hidden="true"></i>
+                </span> </a>
+        </div>
+
+        <!-- home page -->
+
+        <section id="firstPage" class="first-page">
+            <div class="nav-bar">
+                <div class="team-layout">
+                    <h1 class="team-name">THE INVINCIBLE KREATOR</h1>
+                </div>
+
+                <div class="our-team-layout">
+                    <span class="search-btn"> <i class="fa fa-search" aria-hidden="true"></i> </span>
+                    <span class="notification"> <i class="fa fa-bell-o" aria-hidden="true"></i> </span>
+                    <span class="team-logo"> <i class="fa fa-user" aria-hidden="true"></i> </span>
+                </div>
+
+            </div>
+
+            <div class="home-page" id="homeContainer" style=" overflow: hidden;">
+                <canvas id="renderTIK">
+                </canvas>
+            </div>
+
+
+        </section>
+
+
+        <!-- HOME PAGE 2 -->
+        <section class="h-page" id="hPage">
+            <div class="expertise">
+                <h1>SPECIALISM</h1>
+                <div class="expertise-container">
+                    <span>
+                        <p>Since 2020 The Invincible Kreator has been developing awesome websites and
+                            applications for many brands across many industries, Also we are specialize in other fields
+                            like
+                            Modelling, Animations, Arts, Musics and even Gaming.</p>
+                        <p>We're experts in delivering complex digital builds ranging from high volume ecommerce
+                            websites
+                            like Millicent Stores to Creative site such as D'Colors Demo Site to unique cypto
+                            platforms for decetralize currency. We even provide the next generation tools and
+                            technolgies
+                            that powers the
+                            world famous modern sites.</p>
+                    </span>
+
+                    <span>
+                        <p> tough we just a few year old but we've seen how the web technologies has changed into the
+                            modern
+                            technology place it is
+                            today. As a non-profit organization we've developed and updated our approach in delivering
+                            top
+                            quality
+                            projects ensuring our clients' budgets less and recieve high quality delivery by creating
+                            breath
+                            taken projects. </p>
+                        <p>What makes us unique is our experience coupled with our high retention of staff and members,
+                            this
+                            allows us to
+                            provide the quality service,also we are building our reputation on and allowing us to build
+                            long-standing client relationships.</p>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+            <div class="ui-ux-page">
+                <div class="page-text">
+                    <br />
+                    <h1>UI & UX DESIGN</h1>
+                    <br />
+                    <p>Our UX and designers knows how to deliver unique, successful and standard websites and
+                        applications
+                        designs.
+                    </p>
+
+                    <p> The process involves understanding your company/business, your customers and how you interact
+                        together.</p>
+
+                    <p> Our Designers use modern approach to design and ensures we can quickly prototype solutions to
+                        challenging problems, then test and refine the creative to ensure that the content architecture
+                        and
+                        user journeys are fully optimised.</p>
+
+                    <p> Given that mobile devices are now the most preferred platform, our responsive websites are
+                        crafted
+                        to look
+                        awesome across all devices.</p>
+                </div>
+
+            </div>
+
+            <div class="app-dev">
+                <div class="page-text">
+                    <br />
+                    <h1>WEB-APPLICATION DEVELOPMENT</h1>
+                    <br />
+
+                    <p> Since 2020 The Invincible Kreator has been developing awesome websites and
+                        applications for many brands across many industries and countries,
+
+                        <p>What makes TIK unique from most other digital agencies is our fusion of intelligent
+                            design, our unique development process and our experienced and expert team of developers.
+                        </p>
+
+
+                        <p> Our approach to application development focuses on delivering impactful solutions in the
+                            most
+                            modern ways. We can help bring your ideas to life from conceptualisation through to launch
+                            and we're happy to support your inhouse developer teams if required.</p>
+
+                        <p> We generally build our applications and content management systems within different stacks
+                            like
+                            MERN STACK using React js This gives us the tools to develop intuitive, amazing solutions
+                            that
+                            are
+                            scalable, secure and even safe.
+
+
+                        </p>
+                </div>
+            </div>
+
+            <div class="ecommerce">
+                <div class="page-text">
+                    <br />
+                    <h1>ECOMMERCE</h1>
+                    <br />
+                    <p>Note during 2016, shoppers spent more than £154bn online, that's a growth of 25% over the past 2
+                        years. If
+                        you are not already selling your products or services online then clearly e-commerce is
+                        potentially
+                        a very amazing opportunity for your business. </p>
+
+                    <p> Maybe you are already using the internet as a sales channel but you not happy with the
+                        conversion
+                        rate and resulting revenue. TIK is always available to help your online venture succeed. <br>
+                        We've assisted our clients in designing and building e-commerce sites selling everything from
+                        outfits to an online food stores.</p>
+
+                    <p> Finding the right e-commerce solution depends on what you're selling, the number and variation
+                        of products and the behaviour of your customers.
+
+                        <br />
+                        We'll help you invest your money wisely, whether that is deploying affordable off-the-shelf
+                        ecommerce solutions or a more customisable bespoke solution tailored specifically to your market
+                        and offering.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="gaming-streaming">
+                <div class="page-text">
+                    <br />
+                    <h1>GAMING & STREAMING</h1>
+                    <br />
+                    <p>The video game industry continues to make gains and has become one of the most lucrative
+                        worldwide
+                        with over $148.8 billion in revenues, representing year-on-year growth of 7.2 percent compared
+                        with
+                        2018. this is an opportunity for you. </p>
+
+                    <p> Maybe you are already streaming games or you have a gaming channel but you not happy with the
+                        viewers
+                        rate and resulting revenue. TIK is right here to help you by fix the thing you are missing.
+                        <p>We will assist our members in setting-up and running streamings anything from
+                            realtime & arcade games to stimulation & action games.</p>
+
+                        <p> Finding the right viewers depends on what you're streaming, there are many numbers and
+                            variations
+                            games available for streaming.
+
+                            <br />
+                            We'll help you choose your games wisely, whether that is streaming on just having fun
+                            specifically to your streamings
+                            and funs.
+                        </p>
+                </div>
+
+            </div>
+
+            <div class="art-illustration">
+                <div class="page-text">
+                    <br />
+                    <h1>ART & ILLUSTRATION</h1>
+                    <br />
+                    <p> Illustrations is the recent designs around at this moment. We're sure you have heard the phrase
+                        'being creativity lies in the imagainatons' well, in the digital world nothing is impossible
+                        anymore! </p>
+
+                    <p> According to an illustration artist, consumers who sees the arts 80% are more likely to purchase
+                        the
+                        art works compared to those who dont like it.</p>
+
+                    <p> TIK love designing unique art works. We love every steps of creativities from nature drawing to
+                        digital drawings, through traditional and digital we love to work on boths.</p>
+
+                </div>
+
+            </div>
+
+            <div class="model-animation">
+                <div class="page-text">
+                    <br />
+                    <h1>MODEL & ANIMATION</h1>
+                    <br />
+                    <p>2d and 3d animations are recently become hot at this moment. We're sure you have seen many
+                        animations
+                        like 3d cartoons to 2d animated skits or jokes, well 3d and 2d animations are growing fast! </p>
+
+                    <p> Model artsits or Modeller are now creating awesome mind blowing 3d models, consumers who sees 3d
+                        models in sites 89% are more likely to purchase the product compared to those site without 3d
+                        models.</p>
+
+                    <p> TIK love creating unique models. We love to animate most of our models , also our 2d animators
+                        are
+                        always available.</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="reviews">
+
+                <div class="review-box">
+                    <h1>REVIEWS !!!</h1>
+                </div>
+                <div class="reviewers">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+
+                </div>
+
+            </div>
+
+            <div class="tell-us">
+                <h1>NOTHING MAKE US HAPPY LIKE HEARING FROM YOU!</h1>
+                <br />
+                <p> Contact us if you would like to discuss any projects you feel we can help you with.</p>
+                <p> All ours staffs are ready to make you happy just let us know what you need.</p>
+                <div class="buttons">
+                    <span>
+                        <p>JOIN US NOW <br><br> WE WONT DISAPPOINT YOU!</p>
+                    </span>
+                    <span>
+                        <p>WATCH US ONLINE <br><br> TIPS & TUTORIALS, REALLY FUN!</p>
+                    </span>
+                    <span>
+                        <p>OUR APPROACH <br><br> WHAT WE LIKE TO DO</p>
+                    </span>
+                    <span>
+                        <p> GET IN TOUCH <br><br> WHAT ARE U WAITING FOR ? CLICK!!!</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="contact">
+                <h1>CONTACT US !!!</h1>
+                <br />
+                <p> Contact us if you would like to discuss any projects you feel we can help you with.</p>
+                <p> All ours staffs are ready to make you happy just let us know what you need.</p>
+                <div class="buttons">
+                   <a href=""> <div> <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        <p>TWITTER</p>
+                    </div> </a>
+
+               <a href="">   <div> <span><i class="fa fa-youtube" aria-hidden="true" style="color: red;"></i></span>
+                        <p>YOUTUBE</p>
+                    </div> </a>  
+
+                  <a href="">  <div> <span><i class="fa fa-instagram" aria-hidden="true"
+                                style="color: rgb(247, 78, 78)"></i></span>
+                        <p>INSTAGRAM</p>
+                    </div> </a>
+
+                  <a href=""> <div> <span id="github"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        <p>GITHUB</p>
+                    </div> </a> 
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- CAREER PAGE  -->
+        <section class="career-page" id="careerPage">
+            <div class="career-header">
+                <h1>POSITIONS WE ARE REQUITTING !!!</h1>
+            </div>
+
+            <div class="post-box">
+
+                <div class="post-container">
+
+                    <div>
+                        <span class="h1">
+                            <h1>SOCIAL MEDIA MANAGER</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Must have pretty knowlege of how to use Instagram, twitter, discord and other medias</p>
+                            <p>Must be always active to post daily for the sections</p>
+                            <p>Dont worry about what to post , it will be given to you in each sections</p>
+                            <p>it doesnt matter how active you are, what matters is you post daily and regularly </p>
+                            <p>If you are intrested in the postion, kindly contact us and let start work !!! </p>
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <span class="h1">
+                            <h1>UI & UX DESIGNERS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Are you an expert Ui & Ux Designer ?</p>
+                            <p>Do you have experience in designs ?</p>
+                            <p>How about you are beginner in Ui & Ux designs and wanna improve. </p>
+                            <p>it doesnt matter how bad or good your designs are , we are all learners we learn
+                                everyday.
+                            </p>
+                            <p>If you are intrested in the intership or Membership, kindly contact us and let work
+                                together
+                                !!! </p>
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <span class="h1">
+                            <h1>MOBILE OR PC GAMERS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Are you a pro in pc or mobile games ?</p>
+                            <p>Do you love playing games but dont have who to play with ?</p>
+                            <p>We Play alot of realtime multiplayer games like Pubg, Among Us,Cyber hunter,Rideout heros
+                                etc. </p>
+                            <p>it doesnt matter if you are pro or noob , we are not after the wins, we are after the
+                                funs.
+                            </p>
+                            <p>If you are intrested in the Membership, kindly contact us and let play together !!! </p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="h1">
+                            <h1>PROGRAMMERS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Are you a Frontend or Backend developer ?</p>
+                            <p>Are you a Game, App or Web-App developer ?</p>
+                            <p>How about you are beginner in those fields and wanna improve. </p>
+                            <p>it doesnt matter how bad or good you are , we are all learners we learn everyday and
+                                improve.
+                            </p>
+                            <p>If you are intrested in the intership or Membership, kindly contact us and let work
+                                together
+                                !!! </p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="h1">
+                            <h1>ANIMATOR or MODELER </h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Are you an animator or a modeler ?</p>
+                            <p>Are you 3d or 2d animator ?</p>
+                            <p>How about you are good in modelling but need more ideas and improvement. </p>
+                            <p>let model and animate together with pro and beginners </p>
+                            <p>If you are intrested in the Membership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="h1">
+                            <h1>ARTISTS or VFX ARTISTS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Are you a professional artist or good in all types of drawings ?</p>
+                            <p>Do you have experience in VFX ? are you a beginner vfx artist ?</p>
+                            <p>How about you are expert but need people or ideas to work with ? </p>
+                            <p>it doesnt matter how limited you imaginations are, let imagine together. </p>
+                            <p>If you are intrested in the Membership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="h1">
+                            <h1>GRAPHIC DESIGNERS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Are you an expert Graphic Designer ?</p>
+                            <p>Do you have experience in illustrations designing ?</p>
+                            <p>How about you are beginner in graphic designs and wanna improve. </p>
+                            <p>it doesnt matter how bad or good your designs are , we are all learners we learn
+                                everyday.
+                            </p>
+                            <p>If you are intrested in the Membership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="part-header">
+                <h1> PARTNERSHIPS WE WILL BE GLAD TO ACCEPT !!!</h1>
+            </div>
+
+            <div class="part-box">
+
+                <div class="partner-container">
+
+                    <div>
+                        <span class="h1">
+                            <h1>CODER TEAMS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Do you have a Beginner programming team ?</p>
+                            <p>Do you have an Expert programming team ?</p>
+                            <p>How about you are a professional coders </p>
+                            <p>it doesnt matter how expert or professional you are, we will love to partner with you and
+                                create our imaginations with you </p>
+                            <p>If you are intrested in the partnership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="h1">
+                            <h1>GAMER TEAMS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Do you have a Beginner gaming team ?</p>
+                            <p>Do you have an Expert gaming team ?</p>
+                            <p>How about you are a beginner or professional gamer </p>
+                            <p>How about we play together in battles and other games and become the best gamers ever all
+                                in
+                                the power of your team</p>
+                            <p>If you are intrested in the partnership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="h1">
+                            <h1>ANIMATIONS & VFX TEAMS</h1>
+                        </span>
+                        <span class="required">
+
+                            <p>Do you have an animation teams ?</p>
+                            <p>Do you have a cool Vfx teams ?</p>
+                            <p>How about your teams are good in both aspects</p>
+                            <p>We are sure Animations and Vfx will easy and creative if we have you with us sharing
+                                ideas
+                                and creating epic effects. </p>
+                            <p>If you are intrested in the partnership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="h1">
+                            <h1>BEATS MAKERS</h1>
+                        </span>
+                        <span class="required">
+                            <p>Do you have a Beats or Music band ?</p>
+                            <p>how are a proffesional band ?</p>
+                            <p>How about you are a professional beats maker </p>
+                            <p>it doesnt matter how expert or professional you are, we will love to partner with you and
+                                create our musics with you </p>
+                            <p>If you are intrested in the partnership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <span class="h1">
+                            <h1>CREATIVE TEAMS</h1>
+                        </span>
+                        <span class="required">
+                            <p>Do you have any type of creative teams ?</p>
+                            <p>What if you are games or software developers teams</p>
+                            <p>How about you have an awesome creative team in other fields </p>
+                            <p>it doesnt matter what type of creativity you offer, we will love to partner with you and
+                                create our imaginations with you </p>
+                            <p>If you are intrested in the partnership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+
+                    <div>
+                        <span class="h1">
+                            <h1>ORGANIZATIONS</h1>
+                        </span>
+                        <span class="required">
+                            <p>Do you have a non-profit organization ?</p>
+                            <p>Do you have an Organization ?</p>
+                            <p>How about you are a professional Organization </p>
+                            <p>it doesnt matter if profitable or non-profitable or how expert or professional it is , we
+                                will love to partner with you </p>
+                            <p>If you are intrested in the partnership, kindly contact us and let work together !!! </p>
+                        </span>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="works-portfolio" id="worksPortfolio">
+               
+            OUR WORKS !!!
+
+        </section>
+
+
+
+
+
+
+
+        <section id="aboutPage" class="about-page">
+            <div class="side-nav">
+                <h1>PARTNERS</h1>
+                <div class="partners-list">
+                    <div>
+                        <img id="partnerImage" src="./images/d colours logo png.png" alt=""
+                            style=" position:absolute; height: 100%; width: 100%;  overflow: hidden;">
+                        <span class="partner-details">
+                            <a href="https://d-colours.business.site/">
+                                <h1>D'COLORS</h1>
+                            </a>
+                            <br>
+                            <p>This a proffesional artist team, works on painting and arts, street arts, schools and
+                                house painting.</p>
+
+                        </span>
+                    </div>
+
+                    <div>
+                        <img id="partnerImage" src="./images/kat.jpg" alt=""
+                            style=" position:absolute; height: 100%; width: 100%;  overflow: hidden;">
+
+                        <span class="partner-details" style="z-index:2;">
+                            <a href="https://www.youtube.com/channel/UCw44Ze3WvTtvKMiDTpIXF1w">
+                                <h1>K.A.T</h1>
+                            </a>
+                            <br>
+                            <p>
+                                KREATIVE ANGEL T [TIK]
+                                <br>
+                                This an awesome branded youtube channel, create videos on cooking, crafts, qoutes e.c.t.
+                            </p>
+
+                        </span>
+                    </div>
+
+                </div>
+                <h2 class="hint">SCROLL UP FOR MORE</h2>
+
+            </div>
+
+            <div class="right-container">
+
+                <div class="welcome-bar">
+                    <h1>WE ARE THE KREATOR</h1>
+                </div>
+
+                <div class="status-container">
+                    <div class="overview">
+                        <span> <i class="fa fa-user" aria-hidden="true" style="color:black;"></i> </span>
+                        <p>5 Officials</p>
+                    </div>
+
+                    <div class="overview">
+                        <span> <i class="fa fa-users" aria-hidden="true" style="color:white"></i> </span>
+                        <p>10+ Members</p>
+                    </div>
+
+                    <div class="overview">
+                        <span> <i class="fa fa-youtube-play" aria-hidden="true" style="color: red;"></i> </span>
+                        <p>2 Channels</p>
+                    </div>
+
+                    <div class="overview">
+                        <span> <i class="fa fa-users" aria-hidden="true" style="color: purple;"></i> </span>
+                        <p>2+ Partners</p>
+                    </div>
+                </div>
+
+
+
+                <div class="section-bar">
+
+                    <div class="team-profile">
+                        <div class="team-profile-design"></div>
+
+                        <div class="team-posts">
+                            <h1>C.E.O</h1>
+                        </div>
+
+                        <div class="team-profile-pic" style="overflow:hidden;">
+                            <img src="./images/ladyk1.jpg" alt="profile pic" style="height:110%; width:100%;" />
+                        </div>
+
+                        <div class="team-profile-name">
+                            <h1>Kadashia</h1>
+                        </div>
+
+                        <div class="profile-description">
+                            <div class="social-image">
+                                <img src="./images/ladykad.jpg" alt="profile pic" style="height:100%; width:100%;">
+                            </div>
+
+                            <div class="socials">
+                                <span> <i class="fa fa-github" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-google-plus" aria-hidden="true"></i> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-profile">
+                        <div class="team-profile-design"></div>
+
+                        <div class="team-posts">
+                            <h1>C.T.O General</h1>
+                        </div>
+
+                        <div class="team-profile-pic" style="overflow:hidden;">
+                            <img src="./images/leaf2.jpg" alt="profile pic" style="height:110%; width:100%;" />
+                        </div>
+
+                        <div class="team-profile-name">
+                            <h1>SilvenLeaf</h1>
+                        </div>
+
+                        <div class="profile-description">
+                            <div class="social-image">
+                                <img src="./images/leaf.jpg" alt="profile pic" style="height:100%; width:100%;">
+                            </div>
+
+                            <div class="socials">
+                                <span> <i class="fa fa-github" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-google-plus" aria-hidden="true"></i> </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="team-profile">
+                        <div class="team-profile-design"></div>
+
+                        <div class="team-posts">
+                            <h1>C.E.O Assitant</h1>
+                        </div>
+
+                        <div class="team-profile-pic" style="overflow:hidden;">
+                            <img src="./images/kad2.jpg" alt="profile pic" style="height:110%; width:100%;" />
+                        </div>
+
+                        <div class="team-profile-name">
+                            <h1>KybroTIK</h1>
+                        </div>
+
+                        <div class="profile-description">
+                            <div class="social-image">
+                                <img src="./images/kad.jpg" alt="profile pic" style="height:100%; width:100%;">
+                            </div>
+
+                            <div class="socials">
+                                <span> <i class="fa fa-github" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-google-plus" aria-hidden="true"></i> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-profile">
+                        <div class="team-profile-design"></div>
+
+                        <div class="team-posts">
+                            <h1>H.O.D General</h1>
+                        </div>
+
+                        <div class="team-profile-pic" style="overflow:hidden;">
+                            <img src="./images/art1.jpg" alt="profile pic" style="height:110%; width:100%;" />
+                        </div>
+
+                        <div class="team-profile-name">
+                            <h1>D'LivingDarkART</h1>
+                        </div>
+
+                        <div class="profile-description">
+                            <div class="social-image">
+                                <img src="./images/darklivingart.jpg" alt="profile pic"
+                                    style="height:100%; width:100%;">
+                            </div>
+
+                            <div class="socials">
+                                <span> <i class="fa fa-github" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-google-plus" aria-hidden="true"></i> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-profile">
+                        <div class="team-profile-design"></div>
+
+                        <div class="team-posts">
+                            <h1>Digital Marketer</h1>
+                        </div>
+
+                        <div class="team-profile-pic" style="overflow:hidden;">
+                            <img src="./images/nate2.jpg" alt="profile pic" style="height:110%; width:100%;" />
+                        </div>
+
+                        <div class="team-profile-name">
+                            <h1>CyberNate</h1>
+                        </div>
+
+                        <div class="profile-description">
+                            <div class="social-image">
+                                <img src="./images/nate.jpg" alt="profile pic" style="height:100%; width:100%;">
+                            </div>
+
+                            <div class="socials">
+                                <span> <i class="fa fa-github" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-google-plus" aria-hidden="true"></i> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-profile">
+                        <div class="team-profile-design"></div>
+
+                        <div class="team-posts">
+                            <h1>Official Member</h1>
+                        </div>
+
+                        <div class="team-profile-pic" style="overflow:hidden;">
+                            <img src="./images/rose1.jpg" alt="profile pic" style="height:110%; width:100%;" />
+                        </div>
+
+                        <div class="team-profile-name">
+                            <h1>SkyBlueRose</h1>
+                        </div>
+
+                        <div class="profile-description">
+                            <div class="social-image">
+                                <img src="./images/skybluerose.jpg" alt="profile pic" style="height:100%; width:100%;">
+                            </div>
+
+                            <div class="socials">
+                                <span> <i class="fa fa-github" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-twitter" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
+                                <span> <i class="fa fa-google-plus" aria-hidden="true"></i> </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+    </div>
+
+
+
+    <div class="mobile-view" id="mobileView">
+
+        <h1>Mobile View Under Development</h1>
+        <a href="">  <h2>Click Here to See System view</h2> </a>
+        <canvas id="renderMobile">
+        </canvas>
+
+    </div>
+
+
+
+    <script src='./scripts/site.js'> </script>
+</body>
+
+</html>
